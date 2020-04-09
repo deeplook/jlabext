@@ -2,8 +2,9 @@
 
 jupyter labextension install @jupyter-widgets/jupyterlab-manager 
 
-# cookiecutter --config-file mytheme_config.yaml https://github.com/jupyterlab/theme-cookiecutter
-# cd mytheme
-# jupyter labextension install . --debug
+cookiecutter --no-input https://github.com/jupyterlab/theme-cookiecutter
+cd mytheme
+echo 'h1 { color: #f00; text-transform: uppercase; font-weight: bold !important; }' >> mytheme/style/index.css
+jupyter labextension install . --debug
 
 jupyter lab build
