@@ -4,6 +4,7 @@
 # jupyter lab build
 
 cookiecutter --no-input https://github.com/jupyterlab/theme-cookiecutter
-echo 'h1 { color: #f00; text-transform: uppercase; font-weight: bold !important; }' >> mytheme/style/index.css
+cd mytheme
+echo 'h1 { color: #f00; text-transform: uppercase; font-weight: bold !important; }' >> style/index.css
 jupyter labextension install . --debug
 
