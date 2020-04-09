@@ -3,4 +3,4 @@
 cookiecutter --no-input https://github.com/jupyterlab/theme-cookiecutter
 cd mytheme
 echo 'h1 { color: #f00; text-transform: uppercase; font-weight: bold !important; }' >> style/index.css
-jupyter labextension install . --debug
+jupyter labextension install .
