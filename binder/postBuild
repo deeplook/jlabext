@@ -1,10 +1,9 @@
 #!/bin/bash
 
-jupyter labextension install @jupyter-widgets/jupyterlab-manager 
+# jupyter labextension install @jupyter-widgets/jupyterlab-manager 
+# jupyter lab build
 
 cookiecutter --no-input https://github.com/jupyterlab/theme-cookiecutter
-cd mytheme
 echo 'h1 { color: #f00; text-transform: uppercase; font-weight: bold !important; }' >> mytheme/style/index.css
 jupyter labextension install . --debug
 
-jupyter lab build
