@@ -1,0 +1,10 @@
+name: themes
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - nodejs
+  - pip
+  - pip:
+    - cookiecutter
+  - python==3.7.6
