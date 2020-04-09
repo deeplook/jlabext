@@ -2,8 +2,8 @@
 
 jupyter labextension install @jupyter-widgets/jupyterlab-manager 
 
-cookiecutter --default-config https://github.com/jupyterlab/theme-cookiecutter
-cd mytheme
-jupyter labextension install . --debug
+# cookiecutter --config-file mytheme_config.yaml https://github.com/jupyterlab/theme-cookiecutter
+# cd mytheme
+# jupyter labextension install . --debug
 
 jupyter lab build
