@@ -2,5 +2,12 @@
 
 cookiecutter --no-input https://github.com/jupyterlab/theme-cookiecutter
 cd mytheme
-echo 'h1 { color: #f00; text-transform: uppercase; font-weight: bold !important; }' >> style/index.css
+
+mkdir -p style/assets/fonts
+wget -O style/assets/fonts/FiraGO-Regular.woff https://github.com/bBoxType/FiraGO/raw/master/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Regular.woff
+echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Regular.woff); }' >> style/index.css
+
+echo 'h1 { color: #383c45; text-transform: uppercase; font-weight: bold !important; }' >> style/index.css
+echo 'h2 { color: #00908a; font-family: FiraGo; font-weight: bold !important; }' >> style/index.css
+
 jupyter labextension install .
