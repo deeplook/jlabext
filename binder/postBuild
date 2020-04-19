@@ -14,7 +14,7 @@ echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Bold.woff);
 echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Italic.woff); font-weight: italic; }
 ' >> style/index.css
 
-echo 'body { font-family: FiraGo, sans-serif; !important; }' >> style/index.css
+echo 'body { font-family: FiraGo; font-weight: normal !important; }' >> style/index.css
 echo 'h1 { color: #383c45; text-transform: uppercase; font-family: FiraGo; font-weight: bold !important; }' >> style/index.css
 echo 'h2 { color: #00908a; font-family: FiraGo; font-weight: bold !important; }' >> style/index.css
 
