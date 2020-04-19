@@ -8,7 +8,7 @@ wget -O style/assets/fonts/FiraGO-Regular.woff https://github.com/bBoxType/FiraG
 wget -O style/assets/fonts/FiraGO-Bold.woff https://github.com/bBoxType/FiraGO/raw/master/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Bold.woff
 wget -O style/assets/fonts/FiraGO-Italic.woff https://github.com/bBoxType/FiraGO/raw/master/Fonts/FiraGO_WEB_1001/Italic/FiraGO-Italic.woff
 
-echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Regular.woff); }' >> style/index.css
+echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Regular.woff); font-weight: normal; }' >> style/index.css
 echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Bold.woff); font-weight: bold; }
 ' >> style/index.css
 echo '@font-face { font-family: FiraGo; src: url(assets/fonts/FiraGO-Italic.woff); font-weight: italic; }
