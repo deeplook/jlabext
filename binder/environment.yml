@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - cookiecutter
+  - ipylab
   - jupyterlab
   - nodejs
   - python==3.8.2
